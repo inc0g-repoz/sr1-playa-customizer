@@ -1,0 +1,832 @@
+<root>
+<Table>
+	<Preset>
+		<Name>white1</Name>
+		<DisplayName>PLAYER_CREATION_PRESET_WHITE</DisplayName>
+		<Preset_Grid>
+			<Preset_Element>
+				<Morph_Name>brow height</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eye depth</Morph_Name>
+				<Value>0.4375</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eyelid shape</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eyelid slant</Morph_Name>
+				<Value>0.406</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eyelid look</Morph_Name>
+				<Value>0.365</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose height</Morph_Name>
+				<Value>0.4685</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose depth</Morph_Name>
+				<Value>0.5105</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose width</Morph_Name>
+				<Value>0.354</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose length</Morph_Name>
+				<Value>0.6875</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose tip</Morph_Name>
+				<Value>0.5415</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose pitch</Morph_Name>
+				<Value>0.604</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nostril size</Morph_Name>
+				<Value>0.406</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nostril height</Morph_Name>
+				<Value>0.5625</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>bridge curve</Morph_Name>
+				<Value>0.4895</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth height</Morph_Name>
+				<Value>0.4895</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth depth</Morph_Name>
+				<Value>0.3985</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip size</Morph_Name>
+				<Value>0.3335</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip size</Morph_Name>
+				<Value>0.3335</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip shape</Morph_Name>
+				<Value>0.4985</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip shape</Morph_Name>
+				<Value>0.624</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip length</Morph_Name>
+				<Value>0.5025</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip length</Morph_Name>
+				<Value>0.5825</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip notch</Morph_Name>
+				<Value>0.406</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth sides</Morph_Name>
+				<Value>0.5835</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin width</Morph_Name>
+				<Value>0.708</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin height</Morph_Name>
+				<Value>0.573</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin length</Morph_Name>
+				<Value>0.59</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin shape</Morph_Name>
+				<Value>0.4685</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>cheekbone size</Morph_Name>
+				<Value>0.4375</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>cheekbone height</Morph_Name>
+				<Value>0.521</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>muscle</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>fat</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			</Preset_Grid>
+		<_Editor>
+			<Category>Entries</Category>
+			</_Editor>
+		<Hair>combed forward</Hair>
+		<Hair_Length>0.5</Hair_Length>
+		<Skin>
+			<Trans_Grid>
+				<Trans_Elem>
+					<Min>.25</Min>
+					<Start>.4</Start>
+					<Max>.75</Max>
+					</Trans_Elem>
+				<Trans_Elem>
+					<Min>0.1</Min>
+					<Start>.55</Start>
+					<Max>0.75</Max>
+					</Trans_Elem>
+				</Trans_Grid>
+			<MeshID>570</MeshID>
+			<VariantID>36</VariantID>
+			</Skin>
+		<Facial_Hair>
+			<Facial_Hair_Element>
+				<Hair>sideburns 3</Hair>
+				<Hair_Color>Light Brown</Hair_Color>
+				</Facial_Hair_Element>
+			<Facial_Hair_Element>
+				<Hair>eyebrows 1</Hair>
+				<Hair_Color>Light Brown</Hair_Color>
+				</Facial_Hair_Element>
+			</Facial_Hair>
+		<Eye_Mesh>pc_eyeballs.cmeshx</Eye_Mesh>
+		<Eye_Variant>eyes_blue</Eye_Variant>
+		<Hair_Color>Light Brown</Hair_Color>
+		</Preset>
+	<Preset>
+		<Name>black1</Name>
+		<DisplayName>PLAYER_CREATION_PRESET_BLACK</DisplayName>
+		<Preset_Grid>
+			<Preset_Element>
+				<Morph_Name>brow height</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eye depth</Morph_Name>
+				<Value>0.4375</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eyelid shape</Morph_Name>
+				<Value>0.4165</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eyelid slant</Morph_Name>
+				<Value>0.6565</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose height</Morph_Name>
+				<Value>0.594</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose depth</Morph_Name>
+				<Value>0.5905</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose width</Morph_Name>
+				<Value>0.8825</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose length</Morph_Name>
+				<Value>0.2575</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose tip</Morph_Name>
+				<Value>0.5415</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose pitch</Morph_Name>
+				<Value>0.604</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nostril size</Morph_Name>
+				<Value>0.6215</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nostril height</Morph_Name>
+				<Value>0.4025</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>bridge curve</Morph_Name>
+				<Value>0.3195</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>bridge width</Morph_Name>
+				<Value>0.6665</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth height</Morph_Name>
+				<Value>0.4895</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth depth</Morph_Name>
+				<Value>0.6</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip size</Morph_Name>
+				<Value>0.8335</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip size</Morph_Name>
+				<Value>0.8335</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip shape</Morph_Name>
+				<Value>0.584</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip shape</Morph_Name>
+				<Value>0.4585</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip length</Morph_Name>
+				<Value>0.57</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip length</Morph_Name>
+				<Value>0.5575</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip notch</Morph_Name>
+				<Value>0.5315</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth sides</Morph_Name>
+				<Value>0.5185</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin width</Morph_Name>
+				<Value>0.375</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin height</Morph_Name>
+				<Value>0.448</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin length</Morph_Name>
+				<Value>0.375</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin shape</Morph_Name>
+				<Value>0.4685</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>cheekbone size</Morph_Name>
+				<Value>0.271</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>cheekbone height</Morph_Name>
+				<Value>0.5625</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>jowls</Morph_Name>
+				<Value>0.4</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>muscle</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>fat</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			</Preset_Grid>
+		<_Editor>
+			<Category>Entries</Category>
+			</_Editor>
+		<Hair>fuzz</Hair>
+		<Hair_Length>0.25</Hair_Length>
+		<Skin>
+			<Trans_Grid>
+				<Trans_Elem>
+					<Min>.25</Min>
+					<Start>.5</Start>
+					<Max>.75</Max>
+					</Trans_Elem>
+				<Trans_Elem>
+					<Min>0.1</Min>
+					<Start>.2</Start>
+					<Max>0.75</Max>
+					</Trans_Elem>
+				</Trans_Grid>
+			<MeshID>572</MeshID>
+			<VariantID>36</VariantID>
+			</Skin>
+		<Facial_Hair>
+			<Facial_Hair_Element>
+				<Hair>eyebrows 1</Hair>
+				<Hair_Color>Black</Hair_Color>
+				</Facial_Hair_Element>
+			</Facial_Hair>
+		<Eye_Mesh>pc_eyeballs.cmeshx</Eye_Mesh>
+		<Eye_Variant>eyes_brown</Eye_Variant>
+		<Hair_Color>Black</Hair_Color>
+		</Preset>
+	<Preset>
+		<Name>asian1</Name>
+		<DisplayName>PLAYER_CREATION_PRESET_ASIAN</DisplayName>
+		<Preset_Grid>
+			<Preset_Element>
+				<Morph_Name>brow depth</Morph_Name>
+				<Value>0.375</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>brow height</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eye depth</Morph_Name>
+				<Value>0.825</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eyelid shape</Morph_Name>
+				<Value>0.875</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eyelid slant</Morph_Name>
+				<Value>0.246</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose height</Morph_Name>
+				<Value>0.344</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose depth</Morph_Name>
+				<Value>0.414</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose width</Morph_Name>
+				<Value>0.604</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose length</Morph_Name>
+				<Value>0.3125</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose tip</Morph_Name>
+				<Value>0.5415</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose pitch</Morph_Name>
+				<Value>0.604</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nostril size</Morph_Name>
+				<Value>0.5315</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nostril height</Morph_Name>
+				<Value>0.5625</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>bridge curve</Morph_Name>
+				<Value>0.3245</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth height</Morph_Name>
+				<Value>0.656</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth depth</Morph_Name>
+				<Value>0.4</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip size</Morph_Name>
+				<Value>0.2635</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip size</Morph_Name>
+				<Value>0.2485</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip shape</Morph_Name>
+				<Value>0.3335</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip shape</Morph_Name>
+				<Value>0.4585</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip length</Morph_Name>
+				<Value>0.6825</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip length</Morph_Name>
+				<Value>0.4375</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip notch</Morph_Name>
+				<Value>0.7815</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth sides</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin width</Morph_Name>
+				<Value>0.5415</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin height</Morph_Name>
+				<Value>0.348</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin shape</Morph_Name>
+				<Value>0.4685</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>cheekbone size</Morph_Name>
+				<Value>0.8</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>cheekbone height</Morph_Name>
+				<Value>0.8</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>muscle</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>fat</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			</Preset_Grid>
+		<_Editor>
+			<Category>Entries</Category>
+			</_Editor>
+		<Hair>bowl cut</Hair>
+		<Hair_Length>0.5</Hair_Length>
+		<Skin>
+			<Trans_Grid>
+				<Trans_Elem>
+					<Min>.25</Min>
+					<Start>.5</Start>
+					<Max>.75</Max>
+					</Trans_Elem>
+				<Trans_Elem>
+					<Min>0.10</Min>
+					<Start>.55</Start>
+					<Max>0.75</Max>
+					</Trans_Elem>
+				</Trans_Grid>
+			<MeshID>573</MeshID>
+			<VariantID>36</VariantID>
+			</Skin>
+		<Facial_Hair>
+			<Facial_Hair_Element>
+				<Hair>eyebrows 1</Hair>
+				<Hair_Color>Black</Hair_Color>
+				</Facial_Hair_Element>
+			</Facial_Hair>
+		<Eye_Mesh>pc_eyeballs.cmeshx</Eye_Mesh>
+		<Eye_Variant>eyes_brown</Eye_Variant>
+		<Hair_Color>Black</Hair_Color>
+		</Preset>
+	<Preset>
+		<Name>hispanic1</Name>
+		<DisplayName>PLAYER_CREATION_PRESET_HISPANIC</DisplayName>
+		<Preset_Grid>
+			<Preset_Element>
+				<Morph_Name>brow height</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eye depth</Morph_Name>
+				<Value>0.4375</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eyelid shape</Morph_Name>
+				<Value>0.583</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>eyelid slant</Morph_Name>
+				<Value>0.6565</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose height</Morph_Name>
+				<Value>0.2185</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose depth</Morph_Name>
+				<Value>0.5105</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose width</Morph_Name>
+				<Value>0.354</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose length</Morph_Name>
+				<Value>0.5625</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose tip</Morph_Name>
+				<Value>0.525</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nose pitch</Morph_Name>
+				<Value>0.1875</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nostril size</Morph_Name>
+				<Value>0.406</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>nostril height</Morph_Name>
+				<Value>0.5625</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>bridge curve</Morph_Name>
+				<Value>0.656</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>bridge width</Morph_Name>
+				<Value>0.62</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth height</Morph_Name>
+				<Value>0.3645</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth depth</Morph_Name>
+				<Value>0.4685</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip shape</Morph_Name>
+				<Value>0.584</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip shape</Morph_Name>
+				<Value>0.4585</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>upper lip length</Morph_Name>
+				<Value>0.525</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip length</Morph_Name>
+				<Value>0.525</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>lower lip notch</Morph_Name>
+				<Value>0.281</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>mouth sides</Morph_Name>
+				<Value>0.5835</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin width</Morph_Name>
+				<Value>0.375</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin height</Morph_Name>
+				<Value>0.4065</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>chin shape</Morph_Name>
+				<Value>0.594</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>cheekbone size</Morph_Name>
+				<Value>0.6875</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>cheekbone height</Morph_Name>
+				<Value>0.646</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>muscle</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			<Preset_Element>
+				<Morph_Name>fat</Morph_Name>
+				<Value>0.25</Value>
+				</Preset_Element>
+			</Preset_Grid>
+		<_Editor>
+			<Category>Entries</Category>
+			</_Editor>
+		<Hair>spiked</Hair>
+		<Hair_Length>0.25</Hair_Length>
+		<Skin>
+			<Trans_Grid>
+				<Trans_Elem>
+					<Min>.25</Min>
+					<Start>.33</Start>
+					<Max>.75</Max>
+					</Trans_Elem>
+				<Trans_Elem>
+					<Min>0.1</Min>
+					<Start>.38</Start>
+					<Max>0.75</Max>
+					</Trans_Elem>
+				</Trans_Grid>
+			<MeshID>571</MeshID>
+			<VariantID>36</VariantID>
+			</Skin>
+		<Facial_Hair>
+			<Facial_Hair_Element>
+				<Hair>sideburns 2</Hair>
+				<Hair_Color>Black</Hair_Color>
+				</Facial_Hair_Element>
+			<Facial_Hair_Element>
+				<Hair>eyebrows 4</Hair>
+				<Hair_Color>Black</Hair_Color>
+				</Facial_Hair_Element>
+			</Facial_Hair>
+		<Eye_Mesh>pc_eyeballs.cmeshx</Eye_Mesh>
+		<Eye_Variant>eyes_blue</Eye_Variant>
+		<Hair_Color>Black</Hair_Color>
+		</Preset>
+	</Table>
+
+<TableTemplates>
+	</TableTemplates>
+
+<TableDescription>
+	<Name>Preset</Name>
+	<Type>TableDescription</Type>
+	<Element>
+		<Name>Name</Name>
+		<Type>String</Type>
+		<Description>Internal name of the preset.</Description>
+		</Element>
+	<Element>
+		<Name>DisplayName</Name>
+		<Type>Reference</Type>
+		<Display_Name>Display Name</Display_Name>
+		<Description>Display name for the preset.</Description>
+		<Reference>
+			<File>localized_exports\PlayerCreation_text.xtbl</File>
+			<Type>PlayerCreat_Identifier.Name</Type>
+			</Reference>
+		</Element>
+	<Element>
+		<Name>Hair</Name>
+		<Type>Reference</Type>
+		<Description>Hair used for this preset.</Description>
+		<Reference>
+			<File>player_creation_hair.xtbl</File>
+			<Type>Hair.Hair_Grid.Hair_Element.Hair</Type>
+			</Reference>
+		</Element>
+	<Element>
+		<Name>Hair_Length</Name>
+		<Type>Float</Type>
+		<Display_Name>Hair Length</Display_Name>
+		<Default>0.5</Default>
+		<MinValue>0</MinValue>
+		<MaxValue>1</MaxValue>
+		<UseSlider>True</UseSlider>
+		</Element>
+	<Element>
+		<Name>Hair_Color</Name>
+		<Type>Reference</Type>
+		<Display_Name>Hair Color</Display_Name>
+		<Reference>
+			<File>player_creation_hair_color.xtbl</File>
+			<Type>Hair_Color.Hair_Color_Grid.Hair_Color.Name</Type>
+			</Reference>
+		</Element>
+	<Element>
+		<Name>Eye_Mesh</Name>
+		<Type>Reference</Type>
+		<Display_Name>Eye Mesh</Display_Name>
+		<Default>0</Default>
+		<Reference>
+			<File>player_cust.xtbl</File>
+			<Type>Custom_player_slot.Components.Component.Mesh_name.Filename</Type>
+			</Reference>
+		</Element>
+	<Element>
+		<Name>Eye_Variant</Name>
+		<Type>Reference</Type>
+		<Display_Name>Eye Variant</Display_Name>
+		<Default>0</Default>
+		<Reference>
+			<File>player_cust.xtbl</File>
+			<Type>Custom_player_slot.Components.Component.Variant_name</Type>
+			</Reference>
+		</Element>
+	<Element>
+		<Name>Facial_Hair</Name>
+		<Type>Grid</Type>
+		<Display_Name>Facial Hair</Display_Name>
+		<Element>
+			<Name>Facial_Hair_Element</Name>
+			<Type>Element</Type>
+			<Display_Name>Facial Hair Element</Display_Name>
+			<Element>
+				<Name>Hair</Name>
+				<Type>Reference</Type>
+				<Reference>
+					<File>player_creation_hair.xtbl</File>
+					<Type>Hair.Hair_Grid.Hair_Element.Hair</Type>
+					</Reference>
+				</Element>
+			<Element>
+				<Name>Hair_Color</Name>
+				<Type>Reference</Type>
+				<Display_Name>Hair Color</Display_Name>
+				<Reference>
+					<File>player_creation_hair_color.xtbl</File>
+					<Type>Hair_Color.Hair_Color_Grid.Hair_Color.Name</Type>
+					</Reference>
+				</Element>
+			</Element>
+		<Num_Display_Rows>8</Num_Display_Rows>
+		</Element>
+	<Element>
+		<Name>Skin</Name>
+		<Type>Element</Type>
+		<Element>
+			<Name>MeshID</Name>
+			<Type>Int</Type>
+			<Default>0</Default>
+			</Element>
+		<Element>
+			<Name>VariantID</Name>
+			<Type>Int</Type>
+			<Default>0</Default>
+			</Element>
+		<Element>
+			<Name>Trans_Grid</Name>
+			<Type>Grid</Type>
+			<Display_Name>Translation</Display_Name>
+			<Element>
+				<Name>Trans_Elem</Name>
+				<Type>Element</Type>
+				<Element>
+					<Name>Min</Name>
+					<Type>Float</Type>
+					<Default>0.0</Default>
+					<MinValue>0</MinValue>
+					<MaxValue>1</MaxValue>
+					</Element>
+				<Element>
+					<Name>Start</Name>
+					<Type>Float</Type>
+					<Default>0.0</Default>
+					<MinValue>0</MinValue>
+					<MaxValue>1</MaxValue>
+					</Element>
+				<Element>
+					<Name>Max</Name>
+					<Type>Float</Type>
+					<Default>0.0</Default>
+					<MinValue>0</MinValue>
+					<MaxValue>1</MaxValue>
+					</Element>
+				</Element>
+			<Num_Display_Rows>8</Num_Display_Rows>
+			</Element>
+		</Element>
+	<Element>
+		<Name>Preset_Grid</Name>
+		<Type>Grid</Type>
+		<Element>
+			<Name>Preset_Element</Name>
+			<Type>Element</Type>
+			<Element>
+				<Name>Morph_Name</Name>
+				<Type>Reference</Type>
+				<Description>Name of the morph.</Description>
+				<Reference>
+					<File>player_creation.xtbl</File>
+					<Type>Morph_Set.Morph_Infos.Morph_Info.Name</Type>
+					</Reference>
+				</Element>
+			<Element>
+				<Name>Value</Name>
+				<Type>Float</Type>
+				<Description>Value to use for this morph.</Description>
+				<Default>0.5</Default>
+				<MinValue>0</MinValue>
+				<MaxValue>1</MaxValue>
+				<UseSlider>True</UseSlider>
+				</Element>
+			</Element>
+		<Num_Display_Rows>40</Num_Display_Rows>
+		</Element>
+	</TableDescription>
+
+<EntryCategories>
+	<Category>
+		<Name>Entries</Name>
+		</Category>
+	</EntryCategories>
+</root>

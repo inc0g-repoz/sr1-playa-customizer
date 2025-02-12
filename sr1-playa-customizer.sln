@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31129.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SR1PlayaCustomizer", "SR1PlayaCustomizer.csproj", "{F234D21C-6931-4823-A63F-8D7DF35A1E3A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F234D21C-6931-4823-A63F-8D7DF35A1E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F234D21C-6931-4823-A63F-8D7DF35A1E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F234D21C-6931-4823-A63F-8D7DF35A1E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F234D21C-6931-4823-A63F-8D7DF35A1E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9DF783E6-7FBC-4397-A860-1CDF5D23C06C}
+	EndGlobalSection
+EndGlobal
