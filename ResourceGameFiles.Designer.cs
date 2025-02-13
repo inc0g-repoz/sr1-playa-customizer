@@ -129,6 +129,24 @@ namespace SR1PlayaCustomizer {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to &lt;root&gt;&lt;Table&gt;&lt;Preset&gt;&lt;Name&gt;white1&lt;/Name&gt;&lt;DisplayName&gt;MAINMENU_MULTI&lt;/DisplayName&gt;&lt;Preset_Grid&gt;.
+        /// </summary>
+        public static string PLAYER_PRESETS_PREFIX {
+            get {
+                return ResourceManager.GetString("PLAYER_PRESETS_PREFIX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;/Preset_Grid&gt;&lt;/Preset&gt;&lt;Preset&gt;&lt;Name&gt;white2&lt;/Name&gt;&lt;DisplayName&gt;PLAYER_CREATION_PRESET_WHITE&lt;/DisplayName&gt;&lt;Preset_Grid&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;brow height&lt;/Morph_Name&gt;&lt;Value&gt;0.25&lt;/Value&gt;&lt;/Preset_Element&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;eye depth&lt;/Morph_Name&gt;&lt;Value&gt;0.4375&lt;/Value&gt;&lt;/Preset_Element&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;eyelid shape&lt;/Morph_Name&gt;&lt;Value&gt;0.25&lt;/Value&gt;&lt;/Preset_Element&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;eyelid slant&lt;/Morph_Name&gt;&lt;Value&gt;0.406&lt;/Value&gt;&lt;/Preset_Element&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;eyelid look [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string PLAYER_PRESETS_SUFFIX {
+            get {
+                return ResourceManager.GetString("PLAYER_PRESETS_SUFFIX", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to BINTEXT
         ///
         ///ak47=K6 Krukov

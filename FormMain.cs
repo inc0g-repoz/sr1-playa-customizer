@@ -18,6 +18,13 @@ namespace SR1PlayaCustomizer {
             InitializeComponent();
         }
 
+        public void UpDown_ValueChange(object sender, EventArgs e) {
+            NumericUpDown upDown = sender as NumericUpDown;
+            MorphInfo info = upDown.Tag as MorphInfo;
+            info.Value = (float) upDown.Value / 100;
+            Console.WriteLine($"Changed {info.DisplayName} to {info.Value}");
+        }
+
         private bool IsItem(TreeNode node) {
             return node.Tag != null && node.Tag.GetType() == typeof(Item);
         }

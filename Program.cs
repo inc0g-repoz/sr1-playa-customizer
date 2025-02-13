@@ -31,10 +31,29 @@ namespace SR1PlayaCustomizer {
             builder.Append(ResourceGameFiles.CUSTOMIZATION_DEFAULT_ITEMS_SUFFIX);
 
             string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
-            using (StreamWriter outputFile = new StreamWriter(Path.Combine(path, "customization_default_items.xtbl"), false)) {
+            path = Path.Combine(path, "customization_default_items.xtbl");
+            using (StreamWriter outputFile = new StreamWriter(path, false)) {
                 outputFile.Write(builder);
             }
-            Console.WriteLine("Saved in " + path + Path.DirectorySeparatorChar + "customization_default_items.xtbl");
+
+            Console.WriteLine("Saved morphs in " + path + Path.DirectorySeparatorChar + "customization_default_items.xtbl");
+        }
+
+        public static void SavePresets() {
+            StringBuilder builder = new StringBuilder();
+            builder.Append(ResourceGameFiles.PLAYER_PRESETS_PREFIX);
+            foreach (MorphSet set in MORPH_SETS.Values) {
+                builder.Append(set.ToString());
+            }
+            builder.Append(ResourceGameFiles.PLAYER_PRESETS_SUFFIX);
+
+            string path = Path.GetDirectoryName(Assembly.GetExecutingAssembly().Location);
+            path = Path.Combine(path, "player_presets.xtbl");
+            using (StreamWriter outputFile = new StreamWriter(path, false)) {
+                outputFile.Write(builder);
+            }
+
+            Console.WriteLine("Saved morphs in " + path + Path.DirectorySeparatorChar + "player_presets.xtbl");
         }
 
     }
@@ -51,6 +70,10 @@ namespace SR1PlayaCustomizer {
             DisplayName = Globals.US_STRINGS[node.SelectSingleNode("DisplayName").InnerText];
         }
 
+        public override string ToString() {
+            return $"<Preset_Element><Morph_Name>{Name}</Morph_Name><Value>{Value}</Value></Preset_Element>";
+        }
+
     }
 
     public class MorphSet {
@@ -62,6 +85,14 @@ namespace SR1PlayaCustomizer {
         public MorphSet(XmlNode node) {
             Name = node.SelectSingleNode("Name").InnerText;
             DisplayName = Globals.US_STRINGS[node.SelectSingleNode("DisplayName").InnerText];
+        }
+
+        public override string ToString() {
+            StringBuilder builder = new StringBuilder();
+            foreach (MorphInfo info in list) {
+                builder.Append(info);
+            }
+            return builder.ToString();
         }
 
     }
@@ -314,6 +345,7 @@ namespace SR1PlayaCustomizer {
                     upDown.Width = 50;
                     upDown.Value = 50;
                     upDown.Tag = morphInfo;
+                    upDown.ValueChanged += formMain.UpDown_ValueChange;
                     morphInfo.UpDown = upDown;
 
                     container = new FlowLayoutPanel();
