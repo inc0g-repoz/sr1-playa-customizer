@@ -1,6 +1,7 @@
 ﻿using SR1PlayaCustomizer.Source;
 using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -13,6 +14,8 @@ namespace SR1PlayaCustomizer.Source {
         public string Name { get; set; }
         public string DisplayName { get; set; }
         public float Value;
+
+        public XmlNode NodeXml;
         public NumericUpDown UpDown;
 
         public MorphInfo(XmlNode node) {
@@ -24,6 +27,45 @@ namespace SR1PlayaCustomizer.Source {
             return $"<Preset_Element><Morph_Name>{Name}</Morph_Name><Value>{Value}</Value></Preset_Element>";
         }
 
+        public void UpDown_ValueChange(object sender, EventArgs e) {
+            NumericUpDown upDown = sender as NumericUpDown;
+            Value = (float)upDown.Value / 100;
+
+            ValidateXmlNode();
+            UpdateXmlNode();
+
+            Console.WriteLine($"Set morph property \"{Name}\" to {Value}");
+        }
+
+        private XmlNode CreateXmlNode() {
+            XmlDocument xtbl = Globals.XTBL_PLAYER_PRESETS;
+            XmlNode node = xtbl.CreateElement("Preset_Element");
+            node.AppendChild(xtbl.CreateElement("Morph_Name")).InnerText = Name;
+            node.AppendChild(xtbl.CreateElement("Value")).InnerText = Value.ToString();
+            return node;
+        }
+
+        private XmlNode FindXmlNode() {
+            return Globals.NODE_PRESET_GRID.SelectSingleNode($"//Preset_Element[Morph_Name='{Name}']");
+        }
+
+        private void ValidateXmlNode() {
+            if (NodeXml != null) {
+                return;
+            }
+
+            NodeXml = FindXmlNode();
+
+            if (NodeXml == null) {
+                NodeXml = CreateXmlNode();
+                Globals.NODE_PRESET_GRID.AppendChild(NodeXml);
+            }
+        }
+
+        private void UpdateXmlNode() {
+            NodeXml.SelectSingleNode("Value").InnerText = Value.ToString();
+        }
+
     }
 
     public class MorphSet {
@@ -31,6 +73,8 @@ namespace SR1PlayaCustomizer.Source {
         public string Name { get; set; }
         public string DisplayName { get; set; }
         public readonly List<MorphInfo> List = new List<MorphInfo>();
+
+        public XmlNode NodeXml;
 
         public MorphSet(XmlNode node) {
             Name = node.SelectSingleNode("Name").InnerText;
@@ -81,14 +125,15 @@ namespace SR1PlayaCustomizer.Source {
 
     public class Item {
 
-        public bool Selected { get; set; }
         public string Name { get; }
         public string CategoryInternal { get; }
         public string Category { get; }
         public string DisplayName { get; }
+
         public WearOption[] WearOptions { get; }
         public Variant[] Variants { get; }
 
+        public bool Selected { get; set; }
         public int SelWo { get; set; }
         public int SelV { get; set; }
 
@@ -96,27 +141,21 @@ namespace SR1PlayaCustomizer.Source {
         public XmlNode NodeXml { get; set; }
 
         // Creates an empty item
-        public Item(string displayName, string category) {
-            DisplayName = displayName;
-            Category = CategoryInternal = category;
-            WearOptions = new WearOption[0];
-            Variants = new Variant[0];
-        }
-
-        // Creates an item from a document node
         public Item(XmlNode node) {
             Name = node.SelectSingleNode("Name").InnerText;
+            DisplayName = Globals.US_STRINGS[node.SelectSingleNode("DisplayName").InnerText];
             Category = ("Tattoo").Equals(CategoryInternal = node.SelectSingleNode("Category").InnerText)
                 ? Globals.TEXT_INFO.ToTitleCase(String.Concat(Name.TakeWhile(c => !char.IsNumber(c))))
                 : CategoryInternal;
-            DisplayName = Globals.US_STRINGS[node.SelectSingleNode("DisplayName").InnerText];
 
+            // Saving wear options
             XmlNodeList listWo = node.SelectSingleNode("Wear_Options").ChildNodes;
             WearOptions = new WearOption[listWo.Count];
             for (int i = 0; i < listWo.Count; i++) {
                 WearOptions[i] = new WearOption(listWo.Item(i));
             }
 
+            // Saving variants
             XmlNodeList listV = node.SelectSingleNode("Variants").ChildNodes;
             Variants = new Variant[listV.Count];
             for (int i = 0; i < listV.Count; i++) {
@@ -125,12 +164,6 @@ namespace SR1PlayaCustomizer.Source {
 
             if (Variants.Length == 0 || WearOptions.Length == 0) {
                 Console.WriteLine("Invalid item " + Name);
-            }
-        }
-
-        public void Apply() {
-            if (NodeXml == null) {
-
             }
         }
 
@@ -144,12 +177,23 @@ namespace SR1PlayaCustomizer.Source {
         }
 
         public void SetSelected(bool selected) {
+            if (Selected == selected) return;
+
+            ValidateXmlNode();
+
             if (Selected = selected && !IsEmpty()) {
+//              NodeTree.NodeFont = Globals.FONT_SELECTED;
                 NodeTree.Text = "\u2713 " + DisplayName;
+//              NodeTree.Parent.NodeFont = Globals.FONT_SELECTED;
                 NodeTree.Parent.Text = "\u2713 " + Category;
+                UpdateXmlNode();
+                Globals.NODE_DEFAULTS_LIST.AppendChild(NodeXml);
             } else {
+//              NodeTree.NodeFont = Globals.FONR_REGULAR;
                 NodeTree.Text = DisplayName;
+//              NodeTree.Parent.NodeFont = Globals.FONR_REGULAR;
                 NodeTree.Parent.Text = Category;
+                Globals.NODE_DEFAULTS_LIST.RemoveChild(NodeXml);
             }
         }
 
@@ -169,6 +213,37 @@ namespace SR1PlayaCustomizer.Source {
                     break;
                 }
             }
+        }
+
+        private XmlNode CreateXmlNode() {
+            XmlDocument xtbl = Globals.XTBL_CUSTOMIZATION_DEFAULT_ITEMS;
+            XmlNode node = xtbl.CreateElement("Default");
+            node.AppendChild(xtbl.CreateElement("Item")).InnerText = Name;
+            node.AppendChild(xtbl.CreateElement("Wear_Option")).InnerText = WearOptions[SelWo].MeshName;
+            node.AppendChild(xtbl.CreateElement("Variant")).InnerText = Variants[SelV].VariantName;
+            return node;
+        }
+
+        private XmlNode FindXmlNode() {
+            return Globals.NODE_DEFAULTS_LIST.SelectSingleNode($"//Default[Item='{Name}']");
+        }
+
+        private void ValidateXmlNode() {
+            if (NodeXml != null) {
+                return;
+            }
+
+            NodeXml = FindXmlNode();
+
+            if (NodeXml == null) {
+                NodeXml = CreateXmlNode();
+            }
+        }
+
+        private void UpdateXmlNode() {
+            NodeXml.SelectSingleNode("Item").InnerText = Name;
+            NodeXml.SelectSingleNode("Wear_Option").InnerText = WearOptions[SelWo].MeshName;
+            NodeXml.SelectSingleNode("Variant").InnerText = Variants[SelV].VariantName;
         }
 
     }

@@ -7,72 +7,15 @@ namespace SR1PlayaCustomizer.Source {
 
     public partial class FormMain : Form {
 
-        private FormVariant FormVariant = new FormVariant();
+        private FormVariant FormVariant;
 
         public FormMain() {
+            FormVariant = new FormVariant(this);
             InitializeComponent();
-        }
-
-        public void UpDown_ValueChange(object sender, EventArgs e) {
-            NumericUpDown upDown = sender as NumericUpDown;
-            MorphInfo info = upDown.Tag as MorphInfo;
-            info.Value = (float) upDown.Value / 100;
-            Console.WriteLine($"Changed {info.DisplayName} to {info.Value}");
-            Globals.SavePresets();
         }
 
         private bool IsItem(TreeNode node) {
             return node.Tag != null && node.Tag.GetType() == typeof(Item);
-        }
-
-        private void Categories_AfterSelect(object sender, TreeViewEventArgs e) {
-            TreeNode node = e.Node;
-
-            if (!IsItem(node)) {
-                return;
-            }
-
-            Item item;
-            TreeNode lastSelected = GetSelectedItem(node.Parent);
-            if (lastSelected != null) {
-                item = (Item) lastSelected.Tag;
-                item.Selected = false;
-                item.SetSelected(false);
-
-                Globals.SELECTED_ITEMS.Remove(item.Category);
-            }
-
-            item = (Item) node.Tag;
-
-            if (FormVariant.DomainVariant.Enabled = (item.Variants.Count() != 0)) {
-                FormVariant.DomainVariant.Items.Clear();
-                foreach (Variant v in item.Variants) {
-                    FormVariant.DomainVariant.Items.Add(v.Name);
-                }
-                FormVariant.DomainVariant.SelectedIndex = 0;
-            } else {
-                FormVariant.DomainVariant.Text = string.Empty;
-            }
-
-            if (FormVariant.DomainWearOption.Enabled = (item.WearOptions.Count() != 0)) {
-                FormVariant.DomainWearOption.Items.Clear();
-                foreach (WearOption wo in item.WearOptions) {
-                    FormVariant.DomainWearOption.Items.Add(wo.Name);
-                }
-                FormVariant.DomainWearOption.SelectedIndex = 0;
-            } else {
-                FormVariant.DomainWearOption.Text = string.Empty;
-            }
-
-            FormVariant.Item = item;
-            FormVariant.Node = node;
-            FormVariant.Text = item.DisplayName;
-
-            if (FormVariant.Item.IsEmpty()) {
-                FormVariant.Apply();
-            } else {
-                FormVariant.ShowDialog();
-            }
         }
 
         private TreeNode GetSelectedItem(TreeNode category) {
@@ -83,6 +26,42 @@ namespace SR1PlayaCustomizer.Source {
             return null;
         }
 
+        public void RemoveSelection(TreeNode category) {
+            Item item;
+            TreeNode SelectedNode = GetSelectedItem(category);
+            if (SelectedNode != null) {
+                item = (Item)SelectedNode.Tag;
+                item.SetSelected(false);
+            }
+        }
+
+        private void Categories_AfterSelect(object sender, TreeViewEventArgs e) {
+            TreeNode node = e.Node;
+
+            if (!IsItem(node)) {
+                if (node.Text == Globals.ITEM_DISPLAY_NAME_NONE) {
+                    RemoveSelection(node.Parent);
+                }
+                return;
+            }
+
+            Item item = (Item)node.Tag;
+
+            if (item.IsEmpty()) {
+                FormVariant.Apply();
+            } else {
+                FormVariant.LoadItem((Item)item);
+                FormVariant.Node = node;
+                FormVariant.Text = item.DisplayName;
+                FormVariant.ShowDialog();
+            }
+        }
+
+        private void Save(object sender, EventArgs e) {
+            Globals.SaveSelectedItems();
+            Globals.SavePresets();
+            Console.WriteLine("Saved items and morphs");
+        }
     }
 
 }

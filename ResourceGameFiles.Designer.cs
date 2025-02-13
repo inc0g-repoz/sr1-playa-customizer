@@ -61,20 +61,22 @@ namespace SR1PlayaCustomizer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;root&gt;&lt;Table&gt;&lt;Defaults&gt;&lt;Name&gt;Defaults&lt;/Name&gt;&lt;Defaults_List&gt;.
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        public static string CUSTOMIZATION_DEFAULT_ITEMS_PREFIX {
+        public static System.Drawing.Icon beta {
             get {
-                return ResourceManager.GetString("CUSTOMIZATION_DEFAULT_ITEMS_PREFIX", resourceCulture);
+                object obj = ResourceManager.GetObject("beta", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;/Defaults_List&gt;&lt;_Editor&gt;&lt;Category&gt;Entries&lt;/Category&gt;&lt;/_Editor&gt;&lt;/Defaults&gt;&lt;/Table&gt;&lt;TableTemplates&gt;&lt;/TableTemplates&gt;&lt;TableDescription&gt;&lt;Name&gt;Defaults&lt;/Name&gt;&lt;Type&gt;TableDescription&lt;/Type&gt;&lt;Element&gt;&lt;Name&gt;Name&lt;/Name&gt;&lt;Type&gt;String&lt;/Type&gt;&lt;/Element&gt;&lt;Element&gt;&lt;Name&gt;Defaults_List&lt;/Name&gt;&lt;Type&gt;Grid&lt;/Type&gt;&lt;Display_Name&gt;Defaults List&lt;/Display_Name&gt;&lt;Element&gt;&lt;Name&gt;Default&lt;/Name&gt;&lt;Type&gt;Element&lt;/Type&gt;&lt;Element&gt;&lt;Name&gt;Item&lt;/Name&gt;&lt;Type&gt;Reference&lt;/Type&gt;&lt;Description&gt;Default item that the PC will wear.&lt;/Description&gt;&lt;Reference&gt;&lt;File&gt;cust [rest of string was truncated]&quot;;.
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
-        public static string CUSTOMIZATION_DEFAULT_ITEMS_SUFFIX {
+        public static byte[] customization_default_items {
             get {
-                return ResourceManager.GetString("CUSTOMIZATION_DEFAULT_ITEMS_SUFFIX", resourceCulture);
+                object obj = ResourceManager.GetObject("customization_default_items", resourceCulture);
+                return ((byte[])(obj));
             }
         }
         
@@ -129,20 +131,12 @@ namespace SR1PlayaCustomizer {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;root&gt;&lt;Table&gt;&lt;Preset&gt;&lt;Name&gt;white1&lt;/Name&gt;&lt;DisplayName&gt;MAINMENU_MULTI&lt;/DisplayName&gt;.
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
-        public static string PLAYER_PRESETS_PREFIX {
+        public static System.Drawing.Icon save {
             get {
-                return ResourceManager.GetString("PLAYER_PRESETS_PREFIX", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to &lt;/Preset&gt;&lt;Preset&gt;&lt;Name&gt;white2&lt;/Name&gt;&lt;DisplayName&gt;PLAYER_CREATION_PRESET_WHITE&lt;/DisplayName&gt;&lt;Preset_Grid&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;brow height&lt;/Morph_Name&gt;&lt;Value&gt;0.25&lt;/Value&gt;&lt;/Preset_Element&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;eye depth&lt;/Morph_Name&gt;&lt;Value&gt;0.4375&lt;/Value&gt;&lt;/Preset_Element&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;eyelid shape&lt;/Morph_Name&gt;&lt;Value&gt;0.25&lt;/Value&gt;&lt;/Preset_Element&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;eyelid slant&lt;/Morph_Name&gt;&lt;Value&gt;0.406&lt;/Value&gt;&lt;/Preset_Element&gt;&lt;Preset_Element&gt;&lt;Morph_Name&gt;eyelid look&lt;/Morph_Name&gt;&lt; [rest of string was truncated]&quot;;.
-        /// </summary>
-        public static string PLAYER_PRESETS_SUFFIX {
-            get {
-                return ResourceManager.GetString("PLAYER_PRESETS_SUFFIX", resourceCulture);
+                object obj = ResourceManager.GetObject("save", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
             }
         }
         

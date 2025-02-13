@@ -1,0 +1,91 @@
+<root>
+<Table>
+	<Defaults>
+		<Name>Defaults</Name>
+		<Defaults_List>
+			<Default>
+				<Item>baggy jeans</Item>
+				<Wear_Option>cBotm_casBagyPant_NH.cmeshx</Wear_Option>
+				<Variant>jeans_darkblue</Variant>
+				</Default>
+			<Default>
+				<Item>boxers</Item>
+				<Wear_Option>cUndW_boxers.cmeshx</Wear_Option>
+				<Variant>gray</Variant>
+				</Default>
+			<Default>
+				<Item>sneakers</Item>
+				<Wear_Option>cShoe_sneakers.cmeshx</Wear_Option>
+				<Variant>sneakers_red</Variant>
+				</Default>
+			<Default>
+				<Item>t-shirts</Item>
+				<Wear_Option>cUndS_tShirt_TH.cmeshx</Wear_Option>
+				<Variant>tshirt_black</Variant>
+				</Default>
+			<Default>
+				<Item>short socks</Item>
+				<Wear_Option>cSock_low.cmeshx</Wear_Option>
+				<Variant>sm_white</Variant>
+				</Default>
+			</Defaults_List>
+		<_Editor>
+			<Category>Entries</Category>
+			</_Editor>
+		</Defaults>
+	</Table>
+
+<TableTemplates>
+	</TableTemplates>
+
+<TableDescription>
+	<Name>Defaults</Name>
+	<Type>TableDescription</Type>
+	<Element>
+		<Name>Name</Name>
+		<Type>String</Type>
+		</Element>
+	<Element>
+		<Name>Defaults_List</Name>
+		<Type>Grid</Type>
+		<Display_Name>Defaults List</Display_Name>
+		<Element>
+			<Name>Default</Name>
+			<Type>Element</Type>
+			<Element>
+				<Name>Item</Name>
+				<Type>Reference</Type>
+				<Description>Default item that the PC will wear.</Description>
+				<Reference>
+					<File>customization_items.xtbl</File>
+					<Type>Customization_Item.Name</Type>
+					</Reference>
+				</Element>
+			<Element>
+				<Name>Wear_Option</Name>
+				<Type>Reference</Type>
+				<Display_Name>Wear Option</Display_Name>
+				<Reference>
+					<File>customization_items.xtbl</File>
+					<Type>Customization_Item.Wear_Options.Wear_Option.Mesh_Name</Type>
+					</Reference>
+				</Element>
+			<Element>
+				<Name>Variant</Name>
+				<Type>Reference</Type>
+				<Reference>
+					<File>customization_items.xtbl</File>
+					<Type>Customization_Item.Variants.Variant.Variant_Name</Type>
+					</Reference>
+				</Element>
+			</Element>
+		<Num_Display_Rows>20</Num_Display_Rows>
+		</Element>
+	</TableDescription>
+
+<EntryCategories>
+	<Category>
+		<Name>Entries</Name>
+		</Category>
+	</EntryCategories>
+</root>
