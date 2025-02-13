@@ -1,6 +1,6 @@
 ﻿
-namespace SR1PlayaCustomizer
-{
+namespace SR1PlayaCustomizer.Source {
+
     partial class FormMain
     {
         /// <summary>

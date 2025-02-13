@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using SR1PlayaCustomizer.Source;
+using System;
 using System.Windows.Forms;
 
-namespace SR1PlayaCustomizer {
+namespace SR1PlayaCustomizer.Source {
 
     public partial class FormVariant : Form {
 

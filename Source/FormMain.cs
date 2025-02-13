@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
+﻿using SR1PlayaCustomizer.Source;
+using System;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace SR1PlayaCustomizer {
+namespace SR1PlayaCustomizer.Source {
 
     public partial class FormMain : Form {
 
@@ -23,6 +18,7 @@ namespace SR1PlayaCustomizer {
             MorphInfo info = upDown.Tag as MorphInfo;
             info.Value = (float) upDown.Value / 100;
             Console.WriteLine($"Changed {info.DisplayName} to {info.Value}");
+            Globals.SavePresets();
         }
 
         private bool IsItem(TreeNode node) {
